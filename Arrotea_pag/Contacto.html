@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/Logo2.jpg" />
+    <title>Espacio Cultural Arrotea</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"
+      rel="stylesheet"     />
+    <link rel="stylesheet" href="./css1/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="header">
+        <div class="logo">
+          <!--<p class="iniciales-logo">TM</p>-->
+          <h1>Espacio Cultural Arrotea</h1>
+        </div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="form">
+      <h2>Formulario de registro</h2>
+      <form name="form" action="#" method="POST"  onsubmit="return validar();">
+        <label for="nombre">Nombre: </label><input  size="30"  type="text"  name="nombre"  placeholder="Ingrese su nombre aqui..." />
+        <br /><br />
+        <label for="apellido">Apellido:</label><input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..." />
+        <br /><br />
+        <label for="telefono">Telefono: </label><input type="tel" name="telefono" placeholder="ingrese su telefono aqui ...." />
+        <br /><br />
+        <label for="mail">Mail: </label><input type="email" name="mail" />
+        <br /><br />
+
+        <h2>Vacantes</h2>
+        
+        <input type="checkbox" name="." value="." /> Taller de Folclore
+        <br />
+        <input type="checkbox" name="." value="." /> Teatro
+        <br />
+        <input type="checkbox" name="." value="." /> Deportes
+        <br />
+        <input type="checkbox" name="." value="." /> canto
+        <br />
+        <input type="checkbox" name="." value="." /> Bajo
+        <br />
+        <input type="checkbox" name="." value="." /> Guitarra
+        <br />
+        <input type="checkbox" name="." value="." /> Fotografía
+        <br />
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" rows="10" cols="30"></textarea><br />
+
+        <input onclick="validar();" type="submit" value="Enviar" />
+        <button  type="reset">Reset</button>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
